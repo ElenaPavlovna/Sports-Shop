@@ -7,6 +7,12 @@ public class Glove extends Accessory {
     private String size;
     private String season;
 
+    public Glove(String name, String brand, int price, String color, String type, String gender, String material, String size, String season) {
+        super(name, brand, price, color, type, gender, material);
+        this.size = size;
+        this.season = season;
+    }
+
     public String getSize() {
         return size;
     }

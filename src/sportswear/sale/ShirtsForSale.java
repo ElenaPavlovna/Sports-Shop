@@ -9,6 +9,14 @@ public class ShirtsForSale extends SportsWear {
     private int finalPrice;
     private String size;
 
+    public ShirtsForSale(String name, String brand, int price, String color, String type, String gender, String material, String size) {
+        super(name, brand, price, color, type, gender, material);
+        this.discount = discount;
+        this.discount2 = discount2;
+        this.finalPrice = finalPrice;
+        this.size = size;
+    }
+
     public int getDiscount() {
         return discount;
     }
