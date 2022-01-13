@@ -7,6 +7,12 @@ public class Footwear extends SportsWear {
     private int size;
     private String season;
 
+    public Footwear(String name, String brand, int price, String color, String type, String gender, String material, int size, String season) {
+        super(name, brand, price, color, type, gender, material);
+        this.size = size;
+        this.season = season;
+    }
+
     public int getSize() {
 
         return size;

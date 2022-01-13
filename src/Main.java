@@ -2,6 +2,7 @@ import java.util.Objects;
 import sportswear.SportsWear;
 import sportswear.accessories.gloves.Glove;
 import sportswear.footwear.Footwear;
+import sportswear.footwear.Kid;
 import sportswear.footwear.Men;
 import sportswear.footwear.Women;
 import sportswear.sale.ShirtsForSale;
@@ -26,11 +27,11 @@ public class Main {
             System.out.println(store.toString());
 
 
-            // создаем товары:
+            // 1. создаем товары:
 
             // 1. создаем экземпляр женских кроссовок
 
-            Footwear wt1 = new Women();
+            Footwear wt1 = new Women("Женские кроссовки", "Nike",5000,"Белый", "Спортивная обувь", "Жен", "Натуральная кожа", 37, "Весна-лето" );
             wt1.setName("Женские кроссовки");
             wt1.setBrand("Nike");
             wt1.setPrice(5000);
@@ -47,7 +48,7 @@ public class Main {
 
             // 2. создаем экземпляр мужских кроссовок
 
-            Footwear mt1 = new Men();
+            Footwear mt1 = new Men("Мужские кроссовки", "Adidas", 7000,"Черный", "Спортивная обувь", "Муж", "Натуральная кожа", 42, "Весна-осень");
             mt1.setName("Мужские кроссовки");
             mt1.setBrand("Adidas");
             mt1.setPrice(7000);
@@ -64,7 +65,7 @@ public class Main {
 
             // 3. создаем экземпляр перчаток
 
-            Glove gl1 = new Glove();
+            Glove gl1 = new Glove("Перчатки", "Reebok",3500,"Синий", "Спортивная одежда", "Унисекс", "Текстиль", "М", "Зима");
             gl1.setName("Перчатки");
             gl1.setBrand("Reebok");
             gl1.setPrice(3500);
@@ -79,7 +80,16 @@ public class Main {
             gl1.chooseIt();
             gl1.tryOn();
 
-            // 4. создаем корзину
+            // 4. создаем экземпляр детских кроссовок
+            Kid kidsTrainers = new Kid("Деткие кроссовки", "Puma", 4500, "Зеленые", "Спортивная обувь", "Девочки", "Текстиль", 34, "Весна-лето");
+           kidsTrainers.readDescription();
+           kidsTrainers.chooseIt();
+           kidsTrainers.tryOn();
+
+
+
+            // 5. создаем корзину
+
 
 
             Cart cart = new Cart();
@@ -93,7 +103,7 @@ public class Main {
             cart.addToCart(gl1);
             cart.removeFromCart(gl1);
 
-            // 5. создаем кассу
+            // 6. создаем кассу
 
             CashBox cashBox = new CashBox();
 
@@ -113,7 +123,7 @@ public class Main {
 
             // 5.1 первая футболка со скидкой 500 руб (операция вычитание)
 
-            ShirtsForSale shirt1 = new ShirtsForSale();
+            ShirtsForSale shirt1 = new ShirtsForSale("Футболка со скодкой 500 рублей", "Nike", 3000,"Зеленый","Спортивная одежда","Жен","100% хлопок","XXS");
             shirt1.setName("Футболка со скодкой 500 рублей");
             shirt1.setBrand("Nike");
             shirt1.setPrice(3000);
@@ -134,7 +144,7 @@ public class Main {
 
             // 5.2 вторая футболка скидка 50% (операция деление)
 
-            ShirtsForSale shirt2 = new ShirtsForSale();
+            ShirtsForSale shirt2 = new ShirtsForSale("Цены пополам! Футболка со скидкой", "Adidas",3000,"Белый","Спортивная одежда","Жен","100% хлопок","XXS");
             shirt2.setName("Цены пополам! Футболка со скидкой");
             shirt2.setBrand("Adidas");
             shirt2.setPrice(3000);
@@ -154,7 +164,7 @@ public class Main {
 
             // 5.3 третья футболка скидка 50% (операция умножение)
 
-            ShirtsForSale shirt3 = new ShirtsForSale();
+            ShirtsForSale shirt3 = new ShirtsForSale("Цены пополам! Футболка со скидкой", "New Balance",5000,"Белый","Спортивная одежда", "Жен","100% хлопок","XXL");
             shirt3.setName("Цены пополам! Футболка со скидкой");
             shirt3.setBrand("New Balance");
             shirt3.setPrice(5000);
@@ -175,7 +185,7 @@ public class Main {
 
             // 5.4 четвертая футболка скидка 50% (операция сложение)
 
-            ShirtsForSale shirt4 = new ShirtsForSale();
+            ShirtsForSale shirt4 = new ShirtsForSale("Цены пополам! Футболка со скидкой", "Reebok", 6000, "Белый","Спортивная одежда", "Жен", "100% хлопок","S");
             shirt4.setName("Цены пополам! Футболка со скидкой");
             shirt4.setBrand("Reebok");
             shirt4.setPrice(6000);

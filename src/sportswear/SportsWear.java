@@ -9,6 +9,15 @@ public class SportsWear {
     private String gender;
     private String material;
 
+    public SportsWear(String name, String brand, int price, String color, String type, String gender, String material) {
+        this.name = name;
+        this.brand = brand;
+        this.price = price;
+        this.color = color;
+        this.type = type;
+        this.gender = gender;
+        this.material = material;
+    }
 
     public String getName() {
         return name;
