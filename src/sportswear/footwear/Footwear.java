@@ -2,7 +2,7 @@ package sportswear.footwear;
 
 import sportswear.SportsWear;
 
-public class Footwear extends SportsWear {
+public abstract class Footwear extends SportsWear {
     private int size;
     private String season;
 
@@ -12,21 +12,9 @@ public class Footwear extends SportsWear {
         this.season = season;
     }
 
-    public int getSize() {
-
-        return size;
-    }
-
-    public void setSize(int size) {
-
-        this.size = size;
-    }
-
-    public String getSeason() {
-
-        return season;
-    }
-
+    public int getSize() { return size; }
+    public void setSize(int size) { this.size = size; }
+    public String getSeason() { return season; }
     public void setSeason(String season) {
         this.season = season;
     }

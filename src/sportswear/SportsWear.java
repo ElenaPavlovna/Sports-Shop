@@ -1,6 +1,6 @@
 package sportswear;
 
-public class SportsWear {
+public abstract class SportsWear {
     private String name;
     private String brand;
     private  int price;
