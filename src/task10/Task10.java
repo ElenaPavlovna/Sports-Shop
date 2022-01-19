@@ -56,7 +56,6 @@ public class Task10 {
                 System.out.println(i + " - размера нет в наличии");
             else System.out.println((i + " - размер есть в наличии"));
         }
-        System.out.println("-----------------------------------------");
 
         // затем при помощи метода while
 

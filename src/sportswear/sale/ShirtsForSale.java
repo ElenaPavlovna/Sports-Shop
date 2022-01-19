@@ -1,39 +1,12 @@
 package sportswear.sale;
-import sportswear.SportsWear;
 
-public class ShirtsForSale extends SportsWear {
-    private int discount;
-    private float discount2;
-    private int finalPrice;
+public class ShirtsForSale extends Sale {
+
     private String size;
 
-    public ShirtsForSale(String name, String brand, int price, String color, String type, String gender, String material, String size) {
-        super(name, brand, price, color, type, gender, material);
+    public ShirtsForSale(String name, String brand, String color, String type, String gender, String material, int price, int discount, int finalPrice, String size) {
+        super(name, brand, color, type, gender, material, price, discount, finalPrice);
         this.size = size;
-    }
-
-    public int getDiscount() {
-        return discount;
-    }
-
-    public void setDiscount(int discount) {
-        this.discount = discount;
-    }
-
-    public float getDiscount2() {
-        return discount2;
-    }
-
-    public void setDiscount2(float discount2) {
-        this.discount2 = discount2;
-    }
-
-    public int getFinalPrice() {
-        return finalPrice;
-    }
-
-    public void setFinalPrice(int finalPrice) {
-        this.finalPrice = finalPrice;
     }
 
     public String getSize() {
@@ -43,7 +16,6 @@ public class ShirtsForSale extends SportsWear {
     public void setSize(String size) {
         this.size = size;
     }
-
     public void readDescription() {
         System.out.println("Название - " + getName());
         System.out.println("Брэнд - " + getBrand());
@@ -54,6 +26,5 @@ public class ShirtsForSale extends SportsWear {
         System.out.println("Тип - " + getType());
         System.out.println("Пол - " + getGender());
         System.out.println("Материал - " + getMaterial());
-
     };
 }
