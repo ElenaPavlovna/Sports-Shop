@@ -1,9 +1,7 @@
 package sportswear.sale;
-
 import sportswear.SportsWear;
 
 public class ShirtsForSale extends SportsWear {
-
     private int discount;
     private float discount2;
     private int finalPrice;
@@ -11,9 +9,6 @@ public class ShirtsForSale extends SportsWear {
 
     public ShirtsForSale(String name, String brand, int price, String color, String type, String gender, String material, String size) {
         super(name, brand, price, color, type, gender, material);
-        this.discount = discount;
-        this.discount2 = discount2;
-        this.finalPrice = finalPrice;
         this.size = size;
     }
 
@@ -49,7 +44,7 @@ public class ShirtsForSale extends SportsWear {
         this.size = size;
     }
 
-    public void readDescription(){
+    public void readDescription() {
         System.out.println("Название - " + getName());
         System.out.println("Брэнд - " + getBrand());
         System.out.println("Обычная цена - " + getPrice());
@@ -61,6 +56,4 @@ public class ShirtsForSale extends SportsWear {
         System.out.println("Материал - " + getMaterial());
 
     };
-
-
 }

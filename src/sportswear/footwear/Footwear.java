@@ -2,7 +2,6 @@ package sportswear.footwear;
 
 import sportswear.SportsWear;
 
-
 public class Footwear extends SportsWear {
     private int size;
     private String season;
@@ -43,11 +42,6 @@ public class Footwear extends SportsWear {
         System.out.println("Пол - " + getGender());
         System.out.println("Материал - " + getMaterial());
 
-    }
-
-    public void tryOn() {
-
-        System.out.println("Вы примеряете товар");
     }
 
 }

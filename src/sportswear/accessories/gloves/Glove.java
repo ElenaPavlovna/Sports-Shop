@@ -41,9 +41,6 @@ public class Glove extends Accessory {
         System.out.println("Материал - " + getMaterial());
     }
 
-    public void tryOn() {
-        System.out.println("Вы примеряете товар");
-    }
 }
 
 

@@ -13,28 +13,33 @@ public class Store {
         this.workingHours = workingHours;
     }
 
-    public void getInformationAboutTheStore() {
-        System.out.println("Название магазина - " + this.name);
-        System.out.println("Адрес магазина - " + this.address);
-        System.out.println("Номер телефона - " + this.phoneNumber);
-        System.out.println("Время работы магазина: " + this.workingHours);
+    public String getName() {
+        return name;
     }
 
+    public String getAddress() {
+        return address;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public String getWorkingHours() {
+        return workingHours;
+    }
+
+    public void getInformationAboutTheStore() {
+        System.out.println("Название магазина - " + name);
+        System.out.println("Адрес магазина - " + address);
+        System.out.println("Номер телефона - " + phoneNumber);
+        System.out.println("Время работы магазина: " + workingHours);
+    }
     public void storeOpen() {
         System.out.println("Мазазин работает ежедневно с 9.00 - 23.00");
     }
-
     public void storeClose() {
         System.out.println("Магазин не работет с 23.00 - 9.00");
     }
 
-    @Override
-    public String toString() {
-        return "Store{" +
-                "name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                ", workingHours='" + workingHours + '\'' +
-                '}';
-    }
 }
