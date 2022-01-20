@@ -15,15 +15,12 @@ public abstract class Sale extends SportsWear {
     public int getDiscount() {
         return discount;
     }
-
     public void setDiscount(int discount) {
         this.discount = discount;
     }
-
     public int getFinalPrice() {
         return finalPrice;
     }
-
     public void setFinalPrice(int finalPrice) {
         this.finalPrice = finalPrice;
     }

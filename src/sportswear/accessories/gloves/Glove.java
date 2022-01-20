@@ -1,5 +1,4 @@
 package sportswear.accessories.gloves;
-
 import sportswear.accessories.Accessory;
 
 public class Glove extends Accessory {
@@ -12,23 +11,18 @@ public class Glove extends Accessory {
         this.size = size;
         this.season = season;
     }
-
     public String getSize() {
         return size;
     }
-
     public void setSize(String size) {
         this.size = size;
     }
-
     public String getSeason() {
         return season;
     }
-
     public void setSeason(String season) {
         this.season = season;
     }
-
     public void readDescription() {
         System.out.println("Название - " + getName());
         System.out.println("Брэнд - " + getBrand());
@@ -40,7 +34,6 @@ public class Glove extends Accessory {
         System.out.println("Пол - " + getGender());
         System.out.println("Материал - " + getMaterial());
     }
-
 }
 
 

@@ -1,6 +1,9 @@
 package sportswear;
 
-public abstract class SportsWear {
+import booking.Booking;
+import delivery.Delivery;
+
+public abstract class SportsWear implements Purchase, Delivery, Booking {
     private String name;
     private String brand;
     private  int price;
@@ -18,7 +21,6 @@ public abstract class SportsWear {
         this.gender = gender;
         this.material = material;
     }
-
     public String getName() {
         return name;
     }
@@ -60,14 +62,5 @@ public abstract class SportsWear {
     }
     public void setMaterial(String material) {
         this.material = material;
-    }
-
-    public String chooseIt() {return "Товар выбран";}
-    public String tryOn() { return "Вы примеряете товар";}
-    public String buyIt() {
-        return "Товар куплен";
-    }
-    public String returnIt() {
-        return "Возврат товара";
     }
 }

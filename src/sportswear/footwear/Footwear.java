@@ -11,14 +11,18 @@ public abstract class Footwear extends SportsWear {
         this.size = size;
         this.season = season;
     }
-
-    public int getSize() { return size; }
-    public void setSize(int size) { this.size = size; }
-    public String getSeason() { return season; }
+    public int getSize() {
+        return size;
+    }
+    public void setSize(int size) {
+        this.size = size;
+    }
+    public String getSeason() {
+        return season;
+    }
     public void setSeason(String season) {
         this.season = season;
     }
-
     public void readDescription() {
         System.out.println("Название - " + getName());
         System.out.println("Брэнд - " + getBrand());
@@ -29,9 +33,7 @@ public abstract class Footwear extends SportsWear {
         System.out.println("Сезон - " + getSeason());
         System.out.println("Пол - " + getGender());
         System.out.println("Материал - " + getMaterial());
-
     }
-
 }
 
 
