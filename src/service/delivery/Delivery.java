@@ -1,4 +1,4 @@
-package delivery;
+package service.delivery;
 
 public interface Delivery {
     default void orderDelivery(){

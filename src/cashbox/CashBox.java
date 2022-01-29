@@ -2,8 +2,6 @@ package cashbox;
 import sportswear.SportsWear;
 
 public class CashBox {
-    private String name;
-    private String typeOfTheCheck;
     SportsWear sportsWear;
 
     public void giveACheck(SportsWear sportsWear) {
