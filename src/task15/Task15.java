@@ -11,11 +11,11 @@ public class Task15 {
         // в магазин поступила новая коллекция Женских кроссовок New Balance модель 327
         // (5 пар разных размеров, цена 5000 рублей)
 
-        Women womenTrainers1 = new Women ("Женские кроссовки", "New Balance", "327", 5000, "Белый", "Спортивная обувь", "Жен", "Натуральная кожа", 36, "Весна-лето");
-        Women womenTrainers2 = new Women("Женские кроссовки", "New Balance", "327", 5000, "Белый", "Спортивная обувь", "Жен", "Натуральная кожа", 37, "Весна-лето");
-        Women womenTrainers3 = new Women("Женские кроссовки", "New Balance", "327", 5000, "Белый", "Спортивная обувь", "Жен", "Натуральная кожа", 38, "Весна-лето");
-        Women womenTrainers4 = new Women("Женские кроссовки", "New Balance", "327", 5000, "Белый", "Спортивная обувь", "Жен", "Натуральная кожа", 39, "Весна-лето");
-        Women womenTrainers5 = new Women("Женские кроссовки", "New Balance", "327", 5000, "Белый", "Спортивная обувь", "Жен", "Натуральная кожа", 40, "Весна-лето");
+        Women womenTrainers1 = new Women ("0001","Женские кроссовки", "New Balance", "327", 5000, "Белый", "Спортивная обувь", "Жен", "Натуральная кожа", 36, "Весна-лето");
+        Women womenTrainers2 = new Women("0002","Женские кроссовки", "New Balance", "327", 5000, "Белый", "Спортивная обувь", "Жен", "Натуральная кожа", 37, "Весна-лето");
+        Women womenTrainers3 = new Women("0003","Женские кроссовки", "New Balance", "327", 5000, "Белый", "Спортивная обувь", "Жен", "Натуральная кожа", 38, "Весна-лето");
+        Women womenTrainers4 = new Women("0004","Женские кроссовки", "New Balance", "327", 5000, "Белый", "Спортивная обувь", "Жен", "Натуральная кожа", 39, "Весна-лето");
+        Women womenTrainers5 = new Women("0005","Женские кроссовки", "New Balance", "327", 5000, "Белый", "Спортивная обувь", "Жен", "Натуральная кожа", 40, "Весна-лето");
 
         // создаем коллекцию этих товаров
 
@@ -46,7 +46,7 @@ public class Task15 {
         // Из данной коллекции нам надо выбрать только кроссовки 37 размера
 
         for (Women womenTrainer : newBalanceWomen) {
-            if (womenTrainer.getSize() == 37)
+            if (37 == womenTrainer.getSize())
                 System.out.println("Вам подходит товар: " + womenTrainer);
         }
         System.out.println("----------------------------------------------------------------");
@@ -62,11 +62,11 @@ public class Task15 {
 
         // в магазин поступила новая коллекция мужских кроссовок New Balance разных моделей и размеров
 
-        Men menTrainers1 = new Men("Мужские кроссовки", "New Balance", "323", 4500, "Белый", "Спортивная обувь", "Муж", "Натуральная кожа", 39, "Весна-лето");
-        Men menTrainers2 = new Men("Мужские кроссовки", "New Balance", "324", 5000, "Белый", "Спортивная обувь", "Муж", "Натуральная кожа", 40, "Весна-лето");
-        Men menTrainers3 = new Men("Мужские кроссовки", "New Balance", "325", 5500, "Белый", "Спортивная обувь", "Муж", "Натуральная кожа", 41, "Весна-лето");
-        Men menTrainers4 = new Men("Мужские кроссовки", "New Balance", "326", 6500, "Белый", "Спортивная обувь", "Муж", "Натуральная кожа", 42, "Весна-лето");
-        Men menTrainers5 = new Men("Мужские кроссовки", "New Balance", "327", 7000, "Белый", "Спортивная обувь", "Муж", "Натуральная кожа", 43, "Весна-лето");
+        Men menTrainers1 = new Men("0006","Мужские кроссовки", "New Balance", "323", 4500, "Белый", "Спортивная обувь", "Муж", "Натуральная кожа", 39, "Весна-лето");
+        Men menTrainers2 = new Men("0007","Мужские кроссовки", "New Balance", "324", 5000, "Белый", "Спортивная обувь", "Муж", "Натуральная кожа", 40, "Весна-лето");
+        Men menTrainers3 = new Men("0008","Мужские кроссовки", "New Balance", "325", 5500, "Белый", "Спортивная обувь", "Муж", "Натуральная кожа", 41, "Весна-лето");
+        Men menTrainers4 = new Men("0009","Мужские кроссовки", "New Balance", "326", 6500, "Белый", "Спортивная обувь", "Муж", "Натуральная кожа", 42, "Весна-лето");
+        Men menTrainers5 = new Men("0010","Мужские кроссовки", "New Balance", "327", 7000, "Белый", "Спортивная обувь", "Муж", "Натуральная кожа", 43, "Весна-лето");
 
         // создадим коллекию мужских кроссовок
 
@@ -81,9 +81,8 @@ public class Task15 {
         // из данной коллекции нам надо выбрать кроссовки модели 325, размер 41
 
         for (Men menTrainer : newBalanceMen) {
-            if (menTrainer.getSize() == 41 && menTrainer.getModel().equals("325")) {
+            if (41 == menTrainer.getSize() && "325".equals(menTrainer.getModel()))
                 System.out.println("Вам подходит товар: " + menTrainer);
-            }
         }
         System.out.println("----------------------------------------------------------------");
 
@@ -107,17 +106,15 @@ public class Task15 {
 
         // и ее содержимое
 
-        for (Footwear footwear : newBalance) {
-            System.out.println(footwear);
+        for (Footwear footwear0 : newBalance) {
+            System.out.println(footwear0);
         }
         System.out.println("----------------------------------------------------------------");
 
-        // допустим покупатель спрашивает какие мужские кроссовки New Balance
-        // 41 размера я могу купить
-        // не дороже 6000 рублей
+        // допустим покупатель спрашивает кроссовки New Balance 41 размера я могу купить
 
         for (Footwear footwear : newBalance) {
-            if (footwear.getSize() == 41 && Objects.equals(footwear.getBrand(),"New Balance") && Objects.equals(footwear.getGender(),"Муж") && footwear.getPrice()<=6000) {
+            if (footwear.getSize() == 41  && "New Balance".equals(footwear.getBrand())) {
                 System.out.println("Вам подойдет обувь: " + footwear);
             }
         }
@@ -130,7 +127,7 @@ public class Task15 {
         newBalanceMen.clear();
 
         for (Footwear footwear: newBalance)
-            if (Objects.equals(footwear.getGender(),"Муж")) {
+            if ("Муж".equals(footwear.getGender())) {
                 newBalanceMen.add((Men) footwear);
             }
         else newBalanceWomen.add((Women) footwear);
