@@ -3,10 +3,11 @@ package store;
 import sportswear.footwear.Footwear;
 import sportswear.footwear.Men;
 import sportswear.footwear.Women;
+import task18.filter.Filter;
 
 import java.util.*;
 
-public class Store {
+public class Store implements Filter {
     private final String name;
     private final String address;
     private final String phoneNumber;

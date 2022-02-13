@@ -1,7 +1,7 @@
 package task18;
 
 import store.Store;
-import task18.Filter.Filter;
+import task18.filter.Filter;
 
 
 public class Task18  {
@@ -11,52 +11,25 @@ public class Task18  {
 
         // Поиск товаров по коллекции ArrayList
 
-        Filter.searchByVendorCode(store.getFootwearArrayList(), "0008");
-        System.out.println("---------------------------------------------------");
-
-        Filter.searchBySize(store.getFootwearArrayList(),38);
-        System.out.println("---------------------------------------------------");
-
-        Filter.searchByBrand(store.getFootwearArrayList(),"Nike");
-        System.out.println("---------------------------------------------------");
-
-        Filter.searchByPrice(store.getFootwearArrayList(), 4500);
-        System.out.println("---------------------------------------------------");
-
-        Filter.searchByGender(store.getFootwearArrayList(), "Жен");
-        System.out.println("---------------------------------------------------");
-
-        Filter.searchByColor(store.getFootwearArrayList(), "Синий");
-        System.out.println("---------------------------------------------------");
-
-        Filter.searchByModel(store.getFootwearArrayList(), "323");
-        System.out.println("---------------------------------------------------");
+        store.searchByVendorCode(store.getFootwearArrayList(), "0008");
+        store.searchBySize(store.getFootwearArrayList(),38);
+        store.searchByBrand(store.getFootwearArrayList(),"Nike");
+        store.searchByPrice(store.getFootwearArrayList(), 4500);
+        store.searchByGender(store.getFootwearArrayList(), "Жен");
+        store.searchByColor(store.getFootwearArrayList(), "Синий");
+        store.searchByModel(store.getFootwearArrayList(), "323");
 
         // Поиск товаров по коллекции Set
 
-        Filter.searchByVendorCode(store.getFootwearSet(), "0001");
-        System.out.println("---------------------------------------------------");
+        store.searchByVendorCode(store.getFootwearSet(), "0001");
+        store.searchBySize(store.getFootwearSet(),38);
+        store.searchByBrand(store.getFootwearSet(),"Nike");
+        store.searchByPrice(store.getFootwearSet(), 4500);
+        store.searchByGender(store.getFootwearSet(), "Жен");
+        store.searchByColor(store.getFootwearSet(), "Синий");
+        store.searchByModel(store.getFootwearSet(), "323");
 
-        Filter.searchBySize(store.getFootwearSet(),38);
-        System.out.println("---------------------------------------------------");
-
-        Filter.searchByBrand(store.getFootwearSet(),"Nike");
-        System.out.println("---------------------------------------------------");
-
-        Filter.searchByPrice(store.getFootwearSet(), 4500);
-        System.out.println("---------------------------------------------------");
-
-        Filter.searchByGender(store.getFootwearSet(), "Жен");
-        System.out.println("---------------------------------------------------");
-
-        Filter.searchByColor(store.getFootwearSet(), "Синий");
-        System.out.println("---------------------------------------------------");
-
-        Filter.searchByModel(store.getFootwearSet(), "323");
-        System.out.println("---------------------------------------------------");
-
-        // Поиск товаров в Map
-        // поиск товара по ключу (ключ = артикул)
+        // Поиск товаров в Map (ключ = артикул)
 
         System.out.println(store.getFootwearMap().get("0001"));
 
