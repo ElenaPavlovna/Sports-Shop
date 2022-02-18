@@ -18,6 +18,8 @@ public class Main {
         ShirtsForSale shirtsForSale = new ShirtsForSale("1102","Футболка со скидкой", "New Balance","Синий", "Спортивная одежда", "Жен", "100% хлопок", 5000, 500, 4500, "XXS");
         Cart cart = new Cart();
         CashBox cashBox = new CashBox();
+
+
     }
 }
 

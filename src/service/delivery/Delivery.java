@@ -1,16 +1,30 @@
 package service.delivery;
+import java.io.*;
+import java.util.Scanner;
 
 public interface Delivery {
-    default void orderDelivery(){
-        System.out.println("Вы заказали доставку товара");
+
+    String FILE_NAME = "delivery/delivery.txt";
+
+    default void orderDelivery() {
+        try (FileWriter fw = new FileWriter(FILE_NAME, true)) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Введите адрес");
+            fw.write (scanner.nextLine() + "\n");
+            fw.flush();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
-    default void cancelDelivery() {
-        System.out.println("Вы отменили доставку товара");
-    }
-    default void pickUp () {
-        System.out.println("Вы оформили самовывоз товара");
-    }
-    default void cancelPickingUp () {
-        System.out.println("Вы отменили самовывоз товара");
+
+    default void deliveryInfo() {
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(FILE_NAME))) {
+            AddressOfDelivery addressOfDelivery = new AddressOfDelivery(bufferedReader.readLine());
+            System.out.println(addressOfDelivery);
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.out.println("Введите адрес доставки еще раз");
+            orderDelivery();
+        }
     }
 }

@@ -7,7 +7,7 @@ import task18.filter.Filter;
 public class Task18  {
     public static void main(String[] args) {
 
-        Store store = new Store("Магазин спортивной одежды", "Москва", "8-800-100-10-10", "Ежежневно с 9.00 - 23.00");;
+        Store store = new Store("Магазин спортивной одежды", "Москва", "8-800-100-10-10", "Ежежневно с 9.00 - 23.00");
 
         // Поиск товаров по коллекции ArrayList
 

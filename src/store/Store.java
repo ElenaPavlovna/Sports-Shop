@@ -1,5 +1,6 @@
 package store;
 
+import service.delivery.AddressOfDelivery;
 import sportswear.footwear.Footwear;
 import sportswear.footwear.Men;
 import sportswear.footwear.Women;
@@ -36,6 +37,7 @@ public class Store implements Filter {
         return workingHours;
     }
 
+
     public void getInformationAboutTheStore() {
         System.out.println("Название магазина - " + name);
         System.out.println("Адрес магазина - " + address);
@@ -53,6 +55,47 @@ public class Store implements Filter {
     Men menTrainers3 = new Men("0008", "Мужские кроссовки", "Puma", "325", 5500, "Синий", "Спортивная обувь", "Муж", "Натуральная кожа", 41, "Весна-лето");
     Men menTrainers4 = new Men("0009", "Мужские кроссовки", "Nike", "326", 6500, "Зеленый", "Спортивная обувь", "Муж", "Натуральная кожа", 42, "Весна-лето");
     Men menTrainers5 = new Men("0010", "Мужские кроссовки", "New Balance", "327", 7000, "Красный", "Спортивная обувь", "Муж", "Натуральная кожа", 43, "Весна-лето");
+
+    public Women getWomenTrainers1() {
+        return womenTrainers1;
+    }
+
+    public Women getWomenTrainers2() {
+        return womenTrainers2;
+    }
+
+    public Women getWomenTrainers3() {
+        return womenTrainers3;
+    }
+
+    public Women getWomenTrainers4() {
+        return womenTrainers4;
+    }
+
+    public Women getWomenTrainers5() {
+        return womenTrainers5;
+    }
+
+    public Men getMenTrainers1() {
+        return menTrainers1;
+    }
+
+    public Men getMenTrainers2() {
+        return menTrainers2;
+    }
+
+    public Men getMenTrainers3() {
+        return menTrainers3;
+    }
+
+    public Men getMenTrainers4() {
+        return menTrainers4;
+    }
+
+    public Men getMenTrainers5() {
+        return menTrainers5;
+    }
+
 
     public Collection<Footwear> getFootwearArrayList() {
         Collection<Footwear> footwearArrayList = new ArrayList<Footwear>();

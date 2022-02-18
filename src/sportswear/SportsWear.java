@@ -1,10 +1,12 @@
 package sportswear;
 
 import service.booking.Booking;
+import service.delivery.AddressOfDelivery;
 import service.delivery.Delivery;
+import service.feedback.Feedback;
 
 
-public abstract class SportsWear implements Purchase, Delivery, Booking {
+public abstract class SportsWear implements Feedback, Purchase, Booking, Delivery {
     private String vendorCode;
     private String name;
     private String brand;
@@ -13,6 +15,7 @@ public abstract class SportsWear implements Purchase, Delivery, Booking {
     private String type;
     private String gender;
     private String material;
+    AddressOfDelivery address;
 
     public SportsWear(String vendorCode, String name, String brand, int price, String color, String type, String gender, String material) {
         this.vendorCode = vendorCode;
@@ -24,6 +27,8 @@ public abstract class SportsWear implements Purchase, Delivery, Booking {
         this.gender = gender;
         this.material = material;
     }
+
+    public AddressOfDelivery getAddress() { return address; }
 
     public String getVendorCode() {
         return vendorCode;
